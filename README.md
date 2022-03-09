@@ -5,7 +5,7 @@ Here we are going to create a IAM user with custom policy to start, stop and res
 ## Scenario
 
 In a live project enviroment, If you require to provide a dev to start , stop and restart only dev instances. So that we can limit the action a dev can do in the EC2
-So we are going to create 3 Instance with custom tags as follows.
+So we are going to create 3 Instance with custom tags as follows. You can add tags to match your requirement and tweak the policies based on your tags.
 
 # 1. Name = webserver, Env = dev,  Project = zomato
 
@@ -19,10 +19,10 @@ So we are going to create 3 Instance with custom tags as follows.
 
 ![webserver3](https://user-images.githubusercontent.com/98936958/157377124-ebeb2e18-7167-4cfe-b9ba-51a4338daf5c.PNG)
 
-### prerequisite for this project
+## prerequisite for this project
 
 -  Create a IAM user and add the below policy for that user
--  3 AWS Instances with custom  tags.
+-  3 AWS Instances. (See screenshots, I have added policy to match my tags) 
 
 ## IAM POLICY
 
@@ -57,7 +57,7 @@ So we are going to create 3 Instance with custom tags as follows.
 ## Outcome
 
 As per the above IAM policy, The IAM user can only start, stop and restart instances with tags Env = dev,  Project = zomato. The user will not be able to edit tags also.
-
+See screenshots below.
 
 # Unable to perform start, stop and restart.
 
