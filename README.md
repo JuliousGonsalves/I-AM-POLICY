@@ -1,4 +1,4 @@
-## Description.
+## Description
 
 Here we are going to create a IAM user with custom policy to start, stop and restart aws instances based on name tags.
 
